@@ -21,11 +21,36 @@
     </header>
   <main class="container my-4">
     <div class="mb-3 d-flex flex-wrap gap-2">
-      <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noopener" class="link-primary">Doc. Bootstrap</a>
-      <a href="https://api.jquery.com/" target="_blank" rel="noopener" class="link-secondary">Doc. jQuery</a>
       <a href="demo-api-rest.html" class="btn btn-outline-dark btn-sm">Demo API REST (AJAX)</a>
     </div>   
+    <section class="user-grid">
+      <article class="card shadow-sm grid-card">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Acerca de mí</h4>
+          <p id="aboutText">
+            Soy una persona curiosa, me gusta aprender y experimentar con tecnologías web modernas. 
+            Este proyecto demuestra integración de HTML, CSS, Bootstrap 5, JavaScript, jQuery (local) y almacenamiento en el navegador.
+          </p>
+          <button id="btnCambiarParrafo" class="btn btn-sm btn-secondary">Cambiar contenido del párrafo</button>
+        </div>
+      </article>
 
+      <article class="card shadow-sm grid-card">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Preferencias (lista dinámica)</h4>
+          <form id="formPreferencias" class="row g-3 needs-validation" novalidate>
+            <div class="col-12">
+              <label for="inputTexto" class="form-label">Nueva preferencia</label>
+              <input type="text" id="inputTexto" class="form-control" placeholder="Ej. Aprender AJAX">
+              <div class="invalid-feedback">Escribe una preferencia antes de agregar.</div>
+            </div>
+            <div class="col-12">
+              <button type="button" id="btnAgregar" class="btn btn-success">Agregar a la lista</button>
+              <button type="button" id="btnCambiarFondo" class="btn btn-outline-primary ms-2">Cambiar fondo</button>
+            </div>
+          </form>
+
+          
     
 </body>
 </html>
