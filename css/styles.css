@@ -41,7 +41,7 @@ body.bg-app{
   border: 3px solid #e5e7eb;
   transition: transform .25s ease-in-out; 
 .profile-img:hover{                
-  transform: scale(1.06);
+  transform: scale(0.2);
 }
 
 header::before{            
