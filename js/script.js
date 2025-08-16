@@ -110,3 +110,8 @@ if(formPreferencias){
       el?.addEventListener('input', () => el.classList.remove('is-invalid'));
     });
   }
+  if(btnCambiarParrafo && Acercade){
+    btnCambiarParrafo.addEventListener('click', () => {
+      Acercade.textContent = 'Contenido actualizado desde JavaScript: demostrando manipulación del DOM.';
+    });
+  }

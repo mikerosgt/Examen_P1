@@ -11,7 +11,7 @@
 <body class="bg-app" id:bodyRoot>
    <header class="py-4 border-bottom bg-white">
         <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
-            <img src="img/profile.svg" alt="Foto de perfil" class="profile-img>
+            <img src="img/profile.jpg" alt="Foto de perfil" class="profile-img>
             <div>
                 <h1 class="mb-0">Perfil de Usuario</h1>
                 <h2 class="fs-5 text-muted">Primer parcial - Serie 2</h2>
@@ -69,7 +69,43 @@
         </div>
       </article>
 
-    
+  <footer class="py-4 border-top text-center small">
+    <p class="mb-0">Proyecto académico — <a href="#" class="link-body-emphasis">Políticas de uso</a></p>
+  </footer> 
+
+        <article class="card shadow-sm grid-card">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Formulario</h4>
+          <form id="formPerfil" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" id="correo" class="form-control" placeholder="correo@dominio.com" required>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+            <div class="col-12">
+              <label for="bio" class="form-label">Biografía</label>
+              <textarea id="bio" class="form-control" rows="3" placeholder="Cuéntame algo sobre ti" required></textarea>
+              <div class="invalid-feedback">Comparte un breve texto sobre ti.</div>
+            </div>
+            <div class="col-12">
+              <input type="submit" class="btn btn-primary" value="Guardar perfil">
+            </div>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- jQuery local -->
+  <script src="js/jquery.min.js"></script>
+  <!-- JS propio -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap bundle local (popper incluido) -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 </html>
